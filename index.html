@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Themis Model United Nations Conference 2020</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald&family=Montserrat:wght@300;400" />
+    <link href="css/nav.css" rel="stylesheet" />
+    <link href="css/index.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/fontello.css">
+</head>
+<body>
+<!--start CssMenu-->
+<div class="menu-icon-wrapper">
+	<div class="menu-icon" onclick="toggleCssMenu(this)">
+		<div class="three-line">
+			<span></span>
+			<span></span>
+			<span></span>
+		</div>
+	</div>
+</div>
+<div id="cssmenu">
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Why TMUNC</a></li>
+        <li>
+            <span>Committees<i class="arrow"></i></span>
+            <ul class="dropdown">
+                <li><a href="#">Sub Menu 1</a></li>
+                <li><a href="#">Sub Menu 2</a></li>
+            </ul>
+        </li>
+        <li><a href="#">Tradition And Innovation</a></li>
+        <li><a href="#">How is TMUNC Different</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Letter From Sec Gen</a></li>
+        <li><a href="#">Register Now !</a></li>
+    </ul>
+</div>
+<div class="heading"><div class="h">Themis Model United Nations Conference 2020</div></div>
+<!-- <div class="sec sec1 bgw">
+    <div class="txt">
+    </div>
+    
+</div> -->
+<div class="footer">
+    <br>
+    <div class="social">
+        Follow Us On<br><br>
+        <a class="item foot" href="https://www.instagram.com/"><span class="fa fa-2x fa-instagram gradient"></span></a>
+        <a class="item foot" href="https://www.facebook.com/"><span class="fa fa-2x fa-facebook-square"></span></a>
+    </div>
+    <br><br>
+    &copy; Copyright TMUNC 2020
+    <br><br>
+</div>
+<script>
+    function toggleCssMenu(icon) {
+        var cssmenu = document.getElementById('cssmenu');
+        if (icon.className.indexOf('active') == -1) {
+            icon.className = 'menu-icon active';
+			cssmenu.style.display = "block";
+			setTimeout(function(){cssmenu.className = 'active';},0);            
+        }
+        else {
+            icon.className = 'menu-icon';
+			cssmenu.className = '';
+			setTimeout(function(){cssmenu.style.display = "none";},411); 
+        }
+    }
+</script>
+<!--end CssMenu-->
+</body>
+</html>
