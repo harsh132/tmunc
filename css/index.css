@@ -41,6 +41,16 @@ a{
 
 .bgw{
     background-color: #fff;
+    border: #ccc 1px solid;
+    border-radius: 5px;
+    text-align: justify;
+    font-family: 'Montserrat', sans-serif;
+    box-shadow: 0 0 20px -2px #000;
+
+}
+
+.bgw>h3{
+    text-align: center;
 }
 
 .glide-box{
@@ -69,10 +79,19 @@ a{
     .glide__arrows{
         display: none;
     }
+    .small{
+        width: 100%;
+    }
+    .bgw{
+        padding: 10px;
+    }
 }
 
 @media screen and (min-width: 768px)
 {
+    .small{
+        width: 500px;
+    }
     .h
     {
         padding: 0 200px 200px;
@@ -81,6 +100,12 @@ a{
 
     .logo{
         width:700px;
+    }
+
+    .bgw{
+        width: 50%;
+        margin: 0 auto 100px auto;
+        padding:50px 150px;
     }
 
     .txt{
