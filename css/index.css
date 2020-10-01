@@ -2,7 +2,7 @@ body
 {
     margin:0px;
     padding: 0px;
-    background-image: url("../images/wp4.jpg");
+    background-image: url("../images/2114.jpg");
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
@@ -14,17 +14,22 @@ a{
     text-decoration: none;
 }
 
-.heading{
+.container{
     width:100%;
-    background-color: rgba(0,0,0,0.6);
+    background-color: rgba(256,256,256,0.2);
+    text-align: center;
 }
-.heading>.h
+
+.h
 {
     text-align: center;
-    padding: 20% 10px;
+    padding: 0 10px 100px;
     color: #fff;
-    font-size: 60px;
+    font-size: 50px;
+}
 
+.logo{
+    width:100%;
 }
 
 .sec
@@ -38,53 +43,56 @@ a{
     background-color: #fff;
 }
 
+.glide-box{
+    width:100%;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.glide__slide>img{
+    width: 100%;
+}
+
+
+
+.glide__arrow{
+    border-radius: 50px !important;
+    background-color: rgba(50, 50, 50, 0.2) !important;
+}
+
+
 .txt{
     padding: 15px;
 }
 
-.footer
+@media screen and (max-width: 768px)
 {
-    background-color: rgba(0,0,0,0.8);
-    color: #fff;
-    text-align: center;
-
-}
-
-.social{
-    margin: auto;
-}
-
-.fa-instagram,.fa-facebook-square{
-    font-size: 2em;
-    transition: all 0.2s ease-in-out;
-    color: #ccc;
-}
-
-.item:hover>.fa-instagram.gradient,
-a:hover .fa-instagram {
-    background-image: linear-gradient(45deg, #fccc63, #ff5549, #cf3e65);
-    background-size: 100%;
-    -moz-background-clip: text;
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -moz-text-fill-color: transparent;
-}
-
-.item:hover>.fa-facebook-square,
-a:hover .fa-facebook-square {
-    color: #3b5998;
+    .glide__arrows{
+        display: none;
+    }
 }
 
 @media screen and (min-width: 768px)
 {
-    .heading>.h
+    .h
     {
-        padding: 15% 200px;
+        padding: 0 200px 200px;
         font-size: 4rem;
+    }
+
+    .logo{
+        width:700px;
     }
 
     .txt{
         padding: 50px;
+    }
+
+    .glide-contain{
+        width: 80%;
+        margin: auto;
+    }
+
+    .glide__arrows>button>span{
+        font-size: 40px;
     }
 }

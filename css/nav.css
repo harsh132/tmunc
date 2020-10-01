@@ -5,6 +5,9 @@
     text-align:center;
     font-family:Oswald;
     line-height:1.2;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
 }
 #cssmenu ul
 {
@@ -317,7 +320,41 @@
 #cssmenu li a {animation:none;}
 #cssmenu.active li a { animation: topItemAnimation 0.5s cubic-bezier(.16,.84,.44,1) 0.08333333333333333s backwards;}
 #cssmenu.active li:nth-of-type(1) a { animation: topItemAnimation 0.5s cubic-bezier(.16,.84,.44,1) 0.5s backwards;}
-#cssmenu.active li:nth-of-type(2) span { animation: topItemAnimation 0.5s cubic-bezier(.16,.84,.44,1) 0.4166666666666667s backwards;}
-#cssmenu.active li:nth-of-type(3) a { animation: topItemAnimation 0.5s cubic-bezier(.16,.84,.44,1) 0.3333333333333333s backwards;}
+#cssmenu.active li:nth-of-type(2) a { animation: topItemAnimation 0.5s cubic-bezier(.16,.84,.44,1) 0.4166666666666667s backwards;}
+#cssmenu.active li:nth-of-type(3) span { animation: topItemAnimation 0.5s cubic-bezier(.16,.84,.44,1) 0.3333333333333333s backwards;}
 #cssmenu.active li:nth-of-type(4) a { animation: topItemAnimation 0.5s cubic-bezier(.16,.84,.44,1) 0.25s backwards;}
 #cssmenu.active li:nth-of-type(5) a { animation: topItemAnimation 0.5s cubic-bezier(.16,.84,.44,1) 0.16666666666666666s backwards;}@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) { #cssmenu.active li a{animation:none!important;}}
+
+.footer
+{
+    background-color: rgba(0,0,0,0.8);
+    color: #fff;
+    text-align: center;
+
+}
+
+.social{
+    margin: auto;
+}
+
+.fa-instagram,.fa-facebook-square{
+    font-size: 2em;
+    transition: all 0.2s ease-in-out;
+    color: #ccc;
+}
+
+.item:hover>.fa-instagram.gradient,
+a:hover .fa-instagram {
+    background-image: linear-gradient(45deg, #fccc63, #ff5549, #cf3e65);
+    background-size: 100%;
+    -moz-background-clip: text;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+}
+
+.item:hover>.fa-facebook-square,
+a:hover .fa-facebook-square {
+    color: #3b5998;
+}
