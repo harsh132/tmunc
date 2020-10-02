@@ -1,0 +1,38 @@
+.contain
+{
+  margin: 30vh auto;
+  text-align: center;
+  color: #fff;
+}
+
+.s1{
+  font-weight: bold;
+}
+
+.s2{
+  font-weight: 500;
+}
+
+.c{
+  text-shadow: 0 0 30px black;
+}
+
+@media screen and (max-width: 768px)
+{
+  .s1{
+    font-size: 5em;
+  }
+  .s2{
+    font-size: 2em;
+  }
+}
+
+@media screen and (min-width: 768px)
+{
+  .s1{
+    font-size: 10em;
+  }
+  .s2{
+    font-size: 2em;
+  }
+}
